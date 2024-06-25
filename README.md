@@ -70,7 +70,7 @@ This repository contains a custom Retrieval-Augmented Generation (RAG) pipeline 
          pip install numpy==1.26.4
         ```
     - CMAKE error while installing llama_cpp.
-        - This will happen most likly to Windows users. Please refer to the below.
+        - This will happen most likely to Windows users. Please refer to the below link.
         - https://github.com/abetlen/llama-cpp-python?tab=readme-ov-file#installation-configuration
 
 ### Dependencies
