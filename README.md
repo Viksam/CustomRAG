@@ -20,13 +20,72 @@ This repository contains a custom Retrieval-Augmented Generation (RAG) pipeline 
 5. **Generator Model**: Generates responses based on the context and user query.
 6. **Docker Container**: Encapsulates the entire application environment.
 
-## Setup
+## Setup Instructions
 
 ### Prerequisites
 
+- Python 3.7 or higher
+- pip (Python package installer)
+
+### Installation
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/Viksam/CustomRAGpipeline.git
+    cd CustomRAGpipeline
+    ```
+
+2. **Create and activate a virtual environment (recommended):**
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3. **Install the required packages:**
+    ```sh
+    pip install streamlit torch transformers llama-cpp sklearn pymupdf
+    ```
+
+### Usage
+
+1. **Run the Streamlit app:**
+    ```sh
+    streamlit run main.py
+    ```
+
+2. **Open the provided URL in your web browser (usually http://localhost:8501).**
+
+3. **Interact with the application:**
+    - Upload a PDF file.
+    - Enter a question related to the content of the PDF.
+    - Receive a response generated based on the document content.
+
+### Dependencies
+
+- `streamlit`: For building the interactive web application.
+- `torch`: For PyTorch functionalities.
+- `transformers`: For handling the transformer models from HuggingFace.
+- `llama-cpp`: For working with the GGUF Models.
+- `scikit-learn`: For computing cosine similarity.
+- `pymupdf`: For loading and processing PDF files.
+
+
+## Demo
+
+### 1. Colab Notebook:
+#### Prerequisites
+
+- Colab with atleast T4 GPU runtime.
+
+https://colab.research.google.com/drive/1Ge7TtSJ9ZgOuKQHHBx7jZ6Hc2VxGIOi_?usp=sharing
+
+
+### 2. Docker Image:
+#### Prerequisites
+
 - Docker installed on your system.
 
-### Pull Docker Image
+#### Pull Docker Image
 
 You can pull the pre-built Docker image from GitHub Packages using the following command:
 
