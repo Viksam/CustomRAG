@@ -60,6 +60,19 @@ This repository contains a custom Retrieval-Augmented Generation (RAG) pipeline 
     - Enter a question related to the content of the PDF.
     - Receive a response generated based on the document content.
 
+      **Example**
+     <img src="Example.png" width="500" title="Example">
+
+4. **Common Errors:**
+    - Numpy error while running Torch's tensor operations.
+        - if you are using Numpy 2.0.0 version you might get this error. Downgrade your Numpy version to 1.26.4 or lower.
+        ```sh
+         pip install numpy==1.26.4
+        ```
+    - CMAKE error while installing llama_cpp.
+        - This will happen most likly to Windows users. Please refer to the below.
+        - https://github.com/abetlen/llama-cpp-python?tab=readme-ov-file#installation-configuration
+
 ### Dependencies
 
 - `streamlit`: For building the interactive web application.
